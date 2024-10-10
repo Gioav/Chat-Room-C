@@ -150,7 +150,7 @@ void *handle_client(void *arg){
 	}
 
     /* Delete client from queue and yield thread */
-	close(cli->sockfd);
+    close(cli->sockfd);
     queue_remove(cli->uid);
     free(cli);
     cli_count--;
@@ -199,7 +199,7 @@ int main(int argc, char **argv){
 	}
 
 	printf("=== WELCOME TO THE CHATROOM ===\n");
-    printf("the ip is:%s",ip);
+        printf("the ip is:%s\n\n",ip);
 
 	while(1){
 		socklen_t clilen = sizeof(cli_addr);
