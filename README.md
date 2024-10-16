@@ -1,9 +1,20 @@
 # Chat-Room-C
-
-Compile server: gcc server.c -o server -lpthread
-
-Execute server: ./server (the ip for the server) (the port number you want to use)
-
-Compile client: gcc client.c -o client -lpthread 
-
-Execute client: ./client (the ip of the server) (the port number you want to use)
+## Server
+Compile the server:
+```bash
+gcc server.c -o server -lpthread
+```
+Execute the server:
+> To host the server on all the network interfaces, use `0.0.0.0` as IP.
+```bash
+./server <ip_addr> <port>
+```
+## Client
+Compile the client:
+```bash
+gcc client.c -o client -lpthread 
+```
+Execute the client: 
+```bash
+./client <ip_addr> <port>
+```
